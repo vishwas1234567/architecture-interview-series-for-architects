@@ -23,10 +23,17 @@ If you're preparing for an architecture / staff engineer interview, or just want
 
 | Document | Category | Description |
 |---|---|---|
-| [`docs/build-deploy-architecture.md`](docs/build-deploy-architecture.md) | CI/CD & Platform Engineering | Design of a build & deploy system (Vercel/Netlify/Appwrite-style): Git-triggered builds, isolated build environments, artifact storage, versioned deployments, and instant rollback. |
-| [`docs/gitops-cicd-architecture.md`](docs/gitops-cicd-architecture.md) | GitOps & Kubernetes | Design of an Argo-family GitOps CI/CD platform: CI/CD separation, pull-based reconciliation, progressive delivery (canary/blue-green), multi-cluster topology, and Git-as-source-of-truth rollback. |
+| [`docs/build-deploy-architecture.md`](docs/build-deploy-architecture.md) | CI/CD & Platform Engineering | Build & deploy system (Vercel/Netlify/Appwrite-style): Git-triggered builds, isolated build environments, artifact storage, versioned deployments, and instant rollback. |
+| [`docs/gitops-cicd-architecture.md`](docs/gitops-cicd-architecture.md) | GitOps & Kubernetes | Argo-family GitOps CI/CD platform: CI/CD separation, pull-based reconciliation, progressive delivery, multi-cluster topology, Git-as-source-of-truth rollback. |
+| [`docs/event-driven-microservices-architecture.md`](docs/event-driven-microservices-architecture.md) | Microservices & Messaging | Kafka-based event-driven microservices: schema governance, delivery guarantees, dead-letter handling, outbox pattern. |
+| [`docs/multi-tenant-saas-data-isolation-architecture.md`](docs/multi-tenant-saas-data-isolation-architecture.md) | SaaS & Data | Tiered multi-tenant isolation model (pooled/siloed/dedicated), Row-Level Security, noisy-neighbor mitigation. |
+| [`docs/api-gateway-service-mesh-architecture.md`](docs/api-gateway-service-mesh-architecture.md) | Networking & Reliability | API Gateway + service mesh: mTLS, zero-trust, circuit breaking, canary routing, sidecar architecture. |
+| [`docs/distributed-caching-architecture.md`](docs/distributed-caching-architecture.md) | Data & Performance | Distributed caching layer: cache-aside/write-through patterns, invalidation strategy, thundering-herd mitigation. |
+| [`docs/realtime-notification-platform-architecture.md`](docs/realtime-notification-platform-architecture.md) | Messaging & Engagement | Real-time, multi-channel (in-app/push/email/SMS) notification platform with preference-based fan-out. |
+| [`docs/search-indexing-platform-architecture.md`](docs/search-indexing-platform-architecture.md) | Data & Search | Elasticsearch-based search platform: CDC-driven indexing, zero-downtime reindexing, tenant isolation. |
+| [`docs/feature-flag-experimentation-platform-architecture.md`](docs/feature-flag-experimentation-platform-architecture.md) | Delivery & Experimentation | Feature flags + A/B testing platform: local SDK evaluation, kill-switches, experiment analysis. |
 
-> More documents are added over time — see [Roadmap](#-roadmap) below for what's planned.
+> All roadmap items below have now been written up — see the table above.
 
 Each document follows a consistent structure so they're easy to compare and study:
 
@@ -89,15 +96,20 @@ To edit or preview locally:
 
 ## 🛣 Roadmap
 
-Planned additions to the series:
+- [x] Event-driven microservices architecture (Kafka-based)
+- [x] Multi-tenant SaaS data isolation patterns
+- [x] API Gateway & service mesh design
+- [x] Distributed caching layer architecture
+- [x] Real-time notification/messaging platform
+- [x] Search & indexing platform (Elasticsearch-based)
+- [x] Feature flag / experimentation platform
 
-- [ ] Event-driven microservices architecture (Kafka-based)
-- [ ] Multi-tenant SaaS data isolation patterns
-- [ ] API Gateway & service mesh design
-- [ ] Distributed caching layer architecture
-- [ ] Real-time notification/messaging platform
-- [ ] Search & indexing platform (Elasticsearch-based)
-- [ ] Feature flag / experimentation platform
+Next up (suggestions welcome via PR):
+
+- [ ] Distributed rate limiting architecture
+- [ ] Data warehouse / analytics pipeline architecture
+- [ ] Identity & access management (IAM) platform
+- [ ] File storage / media processing pipeline
 
 ---
 
